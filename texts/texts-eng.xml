@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texts lang="EN">
+	<!-- EXTENSION -->
+	<term key="ExtensionPre">http://eng</term>
+	<term key="ExtensionPost">la.com/</term>
+	<term key="Sponsor">-</term>
+	<!--  GENERAL  -->
+	<!--  =======  -->
+	<term key="Level">LEVEL</term>
+	<term key="Tutor">TUTORIAL</term>
+	<!--  PRELOADER  -->
+	<!--  =========  -->
+	<term key="Loading">LOADING</term>
+		
+	<!--  HUD  -->
+	<!--  ===  -->
+	<term key="HUDScoreLbl">SCORE</term>
+	<term key="HUDTimeLbl">TIME</term>
+	<term key="MomokoName">MOMOKO</term>
+	<term key="KaoruName">KAORU</term>
+	<term key="MiyakoName">MIYAKO</term>
+	<term key="Skip">skip</term>
+	
+	<!--  MAIN MENU  -->
+	<!--  =========  -->
+	<term key="MainMenuTitle">MENU PRINCIPAL</term>
+	<term key="PlayBtn">PLAY</term>
+	<term key="MasJuegos">MORE GAMES</term>
+	
+	<!--  INSTRUCTIONS  -->
+	<!--  ============  -->
+	<term key="InstructionsTitle">INSTRUCTIONS</term>
+	<term key="Instructions1">Help the girls to perform various activities in the laboratory of Professor Utonium to not get bored</term>
+	<term key="Instructions2"><![CDATA[<TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="12" COLOR="#105C77" LETTERSPACING="0" KERNING="0">You have to fill </FONT></P></TEXTFORMAT><TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="12" COLOR="#105C77" LETTERSPACING="0" KERNING="0">the bars to get </FONT></P></TEXTFORMAT><TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="12" COLOR="#105C77" LETTERSPACING="0" KERNING="0">the stage cleared</FONT></P></TEXTFORMAT>]]></term>
+	<term key="ContinueBtn">CONTINUE</term>
+	
+
+	<!--  RESULTS  -->
+	<!--  =======  -->
+	<term key="LevelResultsTitle">RESULTS</term>
+	<term key="LevelScore">Level Score:</term>
+	<term key="TotalScore">Total Score:</term>
+	<term key="Qualification">Qualification: </term>
+	<term key="PlayAgainBtn">PLAY   AGAIN</term>
+	<term key="MainMenuBtn">MENU</term>
+	<term key="ScoreLabel">SCORE:</term>
+	
+		<!--  GAME WON  -->
+		<!--  ========  -->
+		<term key="GameWonTitle">CONGRATULATIONS</term>
+		<term key="TextWon">The girls are happier than ever…</term>
+		
+		<!--  GAME LOST  -->
+		<!--  =========  -->
+		<term key="GameLostTitle">GAME OVER</term>
+		<term key="Text1">You didn't entertain the girls</term>
+		<term key="TryAgainTxt">Try Again!</term>
+		
+	<!-- POP UPS -->
+	<!-- ======= -->
+	<term key="Listo">ready</term>
+		<!-- COMPUTER -->
+		<term key="Juegos">Games</term>
+		<term key="Horno">Oven</term>
+		<term key="TV">TV</term>
+		<term key="Bicicleta">Bicycle</term>
+		<term key="Musica">Music</term>
+		<term key="Telefono">phone</term>
+		<term key="TextJuegos">Repite la secuencia de botones.</term>
+		<term key="TextHorno">Repite la secuencia de botones.</term>
+		<term key="TextTV">Enciende y encuentra el canal adecuado para cada chica.</term>
+		<term key="TextBicicleta">Haz girar el pedal presionando el mouse.</term>
+		<term key="TextMusica">Cambia de tema y elije el adecuado para la chica.</term>
+		<term key="TextTelefono">Repite la secuencia de botones.</term>
+		
+	<!--  QUALIFICATION...  -->
+	<!--  =============     -->
+	<!-- <term key="FIRST_QUILIFICATION">SUPER CAPRICHOSAS</term>
+	<term key="SECOND_QUILIFICATION">CAPRICHOSAS</term>
+	<term key="THIRD_QUILIFICATION">MOLESTAS</term>
+	<term key="FOURTH_QUILIFICATION">SUPER ENOJADAS</term>
+	-->
+	<!--  QUALIFICATION...  -->
+	<!--  =============     -->
+	<term key="FIRST_QUILIFICATION">SUPER</term>
+	<term key="SECOND_QUILIFICATION">CAPRICHOSAS</term>
+	<term key="THIRD_QUILIFICATION">MOLESTAS</term>
+	<term key="FOURTH_QUILIFICATION">SUPER ENOJADAS</term>
+	<!-- TUTOR STEPS -->
+	<!-- =========== -->
+		<term key="WelcomeTutor"><![CDATA[<TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="16" COLOR="#ECFFB0" LETTERSPACING="-0.5" KERNING="0"><B>WELCOME TO TUTORIAL</B></FONT></P></TEXTFORMAT><TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="16" COLOR="#ECFFB0" LETTERSPACING="-0.5" KERNING="0"><B>You have to please the girl's whims</B></FONT></P></TEXTFORMAT>]]></term>
+		<term key="Iniciar"><![CDATA[<TEXTFORMAT LEADING="-2"><P ALIGN="CENTER"><FONT FACE="HelveticaRounded Bold" SIZE="17" COLOR="#48348C" LETTERSPACING="-0.5" KERNING="0">You have to please the girl's whims</FONT></P></TEXTFORMAT>]]></term>
+		<term key="Momoko">Blossom</term>
+		<term key="Miyako">Bubbles</term>
+		<term key="Kaoru">Buttercup</term>
+		<term key="Clicked">Click on </term>
+		<term key="Require_comer"> and then on the oven</term>
+		<term key="Require_ejercitar"> and then on the bike</term>
+		<term key="Require_mirar_tv"> and then on the TV</term>
+		
+		<term key="Operate_comer">Repeat the sequence of lightened buttons. Press "Ready" to finish.</term>
+		<term key="Operate_ejercitar">Turn the pedal clicking on it until the bar is complete.</term>
+		<term key="Operate_mirar_tv">Press the Start button.</term>
+		
+		<term key="Select_chanel">Select the right channel with the buttons. Press "Ready" to finish.</term>
+		
+		
+</texts>

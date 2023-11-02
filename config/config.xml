@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!--  CONFIGURATION VARIABLES  -->
+	<!--  =======================  -->
+	<term key="DefaultLang">eng</term>	<!--  Idioma por defecto (si no se pasa por flashVar): eng, esp, por  -->
+	<term key="LangLabel">[LANG]</term>	<!--  Etiqueta que se reemplaza por el cdigo de idioma en las rutas de texto y sonido  -->
+	<term key="TextsPath">texts/texts-[LANG].xml</term>	<!--  Ruta al archivo con textos dinmicos (se puede usar "LangLabel" para armarlo)  -->
+	<term key="SndWeghtPct">10</term>	<!--  Porcentyaje del peso del archivo de sonidos respecto al peso total de la app (temporal, para el preloader)  -->
+	<term key="SoundsPath">sounds.swf</term>	<!--  Ruta al archivo con sonidos (se puede usar "LangLabel" para armarlo)  -->
+	<term key="Width">600</term>	<!--  Ancho de la aplicacin (necesario cuando se trabaja dentro de un contenedor)  -->
+	<term key="Height">400</term>	<!--  Alto de la aplicacin (necesario cuando se trabaja dentro de un contenedor)  -->
+	<term key="DebugMode">true</term>			<!--  Modo Debug? ("true o "false")  -->
+	<term key="UseFlashInspector">false</term>	<!--  Usar FlashInspector para Debug? ("true o "false")  -->
+	<term key="PauseOnFocusLost">false</term>	<!--  Pausar la App cuando el cursor sale del stage? ("true o "false")  -->
+		
+
+	<!-- variables que no cambian en todo el juego -->
+	<term key="NamesGirls">Miyako;Momoko;Kaoru</term>
+	
+	<term key="MiyakoAsset">assets.MiyakoAsset</term><!-- rubia -->
+	<term key="MiyakoMusic">MusicMiyako</term><!-- debe conincidir con el nombre del fram y del sonido -->
+	<term key="MiyakoProgram">MiyakoProgram</term>
+	
+	<term key="MomokoAsset">assets.MomokoAsset</term><!-- colorada -->
+	<term key="MomokoMusic">MusicMomoko</term><!-- debe conincidir con el nombre del fram y del sonido -->
+	<term key="MomokoProgram">MomokoProgram</term>
+	
+	<term key="KaoruAsset">assets.KaoruAsset</term><!-- la de verde -->
+	<term key="KaoruMusic">MusicKaoru</term><!-- debe conincidir con el nombre del fram y del sonido -->
+	<term key="KaoruProgram">KaoruProgram</term>
+	
+	<term key="CookerPrevTiles">9,8;6,8;8,9</term>
+	<term key="CookerPostTiles">9,8;6,8;8,9;</term>
+	
+	<term key="ComputerPrevTiles">2,12;3,11;3,9</term>
+	<term key="ComputerPostTiles">2,12;3,11;3,9</term>
+	
+	<term key="ExcerciseBikePrevTiles">1,20;2,21;3,23</term>
+	<term key="ExcerciseBikePostTiles">1,20;2,21;3,23</term>
+	
+	<term key="RadioPrevTiles">10,11;12,14;11,13</term>
+	<term key="RadioPostTiles">10,11;12,14;11,13</term>
+	
+	<term key="TVPrevTiles">8,25;7,23;11,20</term>
+	<term key="TVPostTiles">8,25;7,23;11,20</term>
+	
+	<term key="PhonePrevTiles">7,13;5,12;4,14</term>
+	<term key="PhonePostTiles">7,13;5,12;4,14</term>
+	
+	
+	
+	<!--  GAME (EJEMPLO) -->
+	<!--  ====  -->
+	<term key="MaxLevels">9</term>						<!--  EJEMPLO - Cantidad de niveles 12,23  -->
+	
+	
+	<!--  TUTOR -->
+	<!--  ====  -->
+	<!--  LEVEL 0  -->
+		<!--  =======  -->
+		<term key="TimeLevel0">120</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+		<term key="Background0">BackgroundMananaAsset</term>
+		<!-- 0:cocinar, 1:computadora, 2: escuchar musica, 3:hacer gimanasia, 4:mirar la tele -->
+		<!-- Se enumeran las acciones permitidas para este nivel separados por ';' -->
+		<term key="ActionsAllow0">0;3;4</term>
+		<term key="Momoko0">0;3;4,14</term>
+		<term key="Miyako0">0;3;5,12</term>
+		<term key="Kaoru0">0;3;7,13</term>
+		<!-- Debe estar ordenado por tiempo de mayor a menor, >tipo de accion,tiempo;...;...-->
+		<!--tipo de accion,tiempo;...;...-->
+		<term key="MomokoDefault0">3,112;3,98;3,78;3,58;3,38;3,18</term>
+		<term key="MiyakoDefault0">0,116;0,90;0,70;0,50;0,30;0,10</term>
+		<term key="KaoruDefault0">4,100;4,80;4,60;4,40;4,20;4,05</term>
+		
+		<term key="TIME_POPUP_0">12000</term>
+		<term key="TIME_PROCESS_0">8000</term>
+		<term key="MAX_TIME_OPTIMUN_0">10000</term>
+		
+		<!--  LEVEL 1  -->
+	<!--  =======  -->
+  		<term key="TimeLevel1">120</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+  		<term key="Background1">BackgroundMananaAsset</term>    <!-- El fondo que se elige-->
+ 
+    	<!-- 0:COCINAR, 1:COMPUTADORA, 2: MUSICA, 3:GIMNASIA, 4:TV , 5:telefono-->
+    	<!-- Se enumeran las acciones permitidas para este nivel separados por ';' -->
+    	<term key="ActionsAllow1">0;2;3</term>
+    
+    	<!-- nro de acciones total; delay entre accion(es segundos);posicion el mapa(de 24x16)(x,y)-->
+			
+    	<term key="Momoko1">0;4;4,14</term>
+    	<term key="Miyako1">0;4;5,12</term>
+    	<term key="Kaoru1">0;4;7,13</term>
+		<term key="MomokoDefault1">1,112;1,98;1,78;1,58;1,38;1,18</term>
+		<term key="MiyakoDefault1">3,116;3,90;3,70;3,50;3,30;3,10</term>
+		<term key="KaoruDefault1">4,100;4,80;4,60;4,40;4,20;4,05</term>
+    	
+    	<term key="TIME_POPUP_1">10000</term>     <!-- Tiempo del POP UP visible en pantalla, en milisegundos 1seg = 1000 -->
+    	<term key="TIME_PROCESS_1">8000</term>    <!-- Tiempo de proceso,duracin de la chica haciendo la accin -->
+    	<term key="MAX_TIME_OPTIMUN_1">8000</term><!-- Tiempo maximo p/considera la realizacin de la accin perfecta -->
+    	
+    	<!-- OBSTACULOS nivel 1-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<!--Tipos de obstaculos >> TELEFONO= 0; PEACh = 1; MOJO = 2 . EL - va en caso de no querer colocar nada-->       
+      		<term key="OrderObstacles1">-</term>
+      		<!-- El tiempo en el que aparecen los obstaculos mencionados antes separados por ";" y va en segundos. EL - va en caso de no querer colocar nada-->
+      		<term key="TimesObstacles1">-</term>
+      		
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<!--Lo sig se completa solo si lo anterior va vacio y ser para que los obstaculos se asignen randomicamente-->
+      		<term key="NumberObstacles1">0</term>           <!-- Numero de obstaculos -->
+      		<term key="DelayObstacles1">10</term>           <!-- segundos minimos entre acci'on -->
+      		<term key="AllowsObstacles1">0;1</term>       <!-- Tipos de obstaculos permitidos separados por ';' -->
+		
+	<!--  LEVEL 2  -->
+	<!--  =======  -->
+  		<term key="TimeLevel2">120</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+  		<term key="Background2">BackgroundMananaAsset</term>    <!-- El fondo que se elige-->
+ 
+    	<!-- 0:COCINAR, 1:COMPUTADORA, 2: MUSICA, 3:GIMNASIA, 4:TV , 5:telefono-->
+    	<!-- Se enumeran las acciones permitidas para este nivel separados por ';' -->
+    	<term key="ActionsAllow2">0;2;3;4</term>
+    
+    	<!-- nro de acciones total; delay entre accion(es segundos);posicion el mapa(de 24x16)(x,y)-->
+    	<term key="Momoko2">0;4;4,14</term>
+    	<term key="Miyako2">0;4;5,12</term>
+    	<term key="Kaoru2">0;4;7,13</term>
+		<term key="MomokoDefault2">0,112;2,98;5,78;0,58;2,38;5,18</term>
+		<term key="MiyakoDefault2">2,116;5,90;0,70;2,50;5,30;0,10</term>
+		<term key="KaoruDefault2">5,100;0,80;2,60;5,40;0,20;2,05</term>
+    	
+    	<term key="TIME_POPUP_2">10000</term>     <!-- Tiempo del POP UP visible en pantalla, en milisegundos 1seg = 1000 -->
+    	<term key="TIME_PROCESS_2">8000</term>    <!-- Tiempo de proceso,duracin de la chica haciendo la accin -->
+    	<term key="MAX_TIME_OPTIMUN_2">8000</term><!-- Tiempo maximo p/considera la realizacin de la accin perfecta -->
+    	
+    	<!-- OBSTACULOS nivel 2-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<!--Tipos de obstaculos >> TELEFONO= 0; PEACh = 1; MOJO = 2 . EL - va en caso de no querer colocar nada-->       
+      		<term key="OrderObstacles2">-</term>
+      		<!-- El tiempo en el que aparecen los obstaculos mencionados antes separados por ";" y va en segundos. EL - va en caso de no querer colocar nada-->
+      		<term key="TimesObstacles2">-</term>
+      		
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<!--Lo sig se completa solo si lo anterior va vacio y ser para que los obstaculos se asignen randomicamente-->
+      		<term key="NumberObstacles2">2</term>           <!-- Numero de obstaculos -->
+      		<term key="DelayObstacles2">10</term>           <!-- segundos minimos entre acci'on -->
+      		<term key="AllowsObstacles2">0;1</term>       <!-- Tipos de obstaculos permitidos separados por ';' -->
+		
+	
+	<!--  LEVEL 3  -->
+	<!--  =======  -->
+  		<term key="TimeLevel3">90</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+  		<term key="Background3">BackgroundMananaAsset</term>    <!-- El fondo que se elige-->
+ 
+    	<!-- 0:COCINAR, 1:COMPUTADORA, 2: MUSICA, 3:GIMNASIA, 4:TV , 5:telefono-->
+    	<!-- Se enumeran las acciones permitidas para este nivel separados por ';' -->
+    	<term key="ActionsAllow3">0;2;3;4</term>
+    
+    	<!-- nro de acciones total; delay entre accion(es segundos);posicion el mapa(de 24x16)(x,y)-->
+    	<term key="Momoko3">10;4;4,14</term>
+    	<term key="Miyako3">10;4;5,12</term>
+    	<term key="Kaoru3">10;4;7,13</term>
+    	
+    	<term key="TIME_POPUP_3">10000</term>     <!-- Tiempo del POP UP visible en pantalla, en milisegundos 1seg = 1000 -->
+    	<term key="TIME_PROCESS_3">8000</term>    <!-- Tiempo de proceso,duracin de la chica haciendo la accin -->
+    	<term key="MAX_TIME_OPTIMUN_3">8000</term><!-- Tiempo maximo p/considera la realizacin de la accin perfecta -->
+    	
+    	<!-- OBSTACULOS nivel 1-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<!--Tipos de obstaculos >> TELEFONO= 0; PEACh = 1; MOJO = 2 . EL - va en caso de no querer colocar nada-->       
+      		<term key="OrderObstacles3">-</term>
+      		<!-- El tiempo en el que aparecen los obstaculos mencionados antes separados por ";" y va en segundos. EL - va en caso de no querer colocar nada-->
+      		<term key="TimesObstacles3">-</term>
+      		
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<!--Lo sig se completa solo si lo anterior va vacio y ser para que los obstaculos se asignen randomicamente-->
+      		<term key="NumberObstacles3">2</term>           <!-- Numero de obstaculos -->
+      		<term key="DelayObstacles3">10</term>           <!-- segundos minimos entre acci'on -->
+      		<term key="AllowsObstacles3">0;1</term>       <!-- Tipos de obstaculos permitidos separados por ';' -->
+		
+		<!--  LEVEL 4  -->
+		<!--  =======  -->
+    		<term key="TimeLevel4">110</term>	
+			  <term key="Background4">BackgroundTardeAsset</term> <!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow4">1;2;3;4</term>
+    	
+    		<term key="Momoko4">13;3;4,14</term>
+    		<term key="Miyako4">13;3;5,12</term>
+    		<term key="Kaoru4">13;3;7,13</term>
+    		<term key="TIME_POPUP_4">10000</term>
+    		<term key="TIME_PROCESS_4">8000</term>
+    		<term key="MAX_TIME_OPTIMUN_4">8000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 2-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles4">-</term>
+      		<term key="TimesObstacles4">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles4">2</term>   
+      		<term key="DelayObstacles4">10</term>
+      		<term key="AllowsObstacles4">0;1</term>
+			
+	
+		<!--  LEVEL 5  -->
+		<!--  =======  -->
+    		<term key="TimeLevel5">110</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow5">1;2;3;4</term>
+			  <term key="Background5">BackgroundNocheAsset</term> 
+    		
+    		
+    		<term key="Momoko5">15;3;4,14</term>
+    		<term key="Miyako5">15;3;5,12</term>
+    		<term key="Kaoru5">15;3;7,13</term>
+    		<term key="TIME_POPUP_5">10000</term>
+    		<term key="TIME_PROCESS_5">6000</term>
+    		<term key="MAX_TIME_OPTIMUN_5">7000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 5-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles5">-</term>
+      		<term key="TimesObstacles5">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles5">3</term>   
+      		<term key="DelayObstacles5">10</term>
+      		<term key="AllowsObstacles5">0;1;2</term>
+		<!--  LEVEL 6  -->
+		<!--  =======  -->
+    		<term key="TimeLevel6">110</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow6">1;2;3;4</term>
+			<term key="Background6">BackgroundMananaAsset</term> 
+    		
+    	
+    		<term key="Momoko6">15;3;4,14</term>
+    		<term key="Miyako6">15;3;5,12</term>
+    		<term key="Kaoru6">15;3;7,13</term>
+    		<term key="TIME_POPUP_6">10000</term>
+    		<term key="TIME_PROCESS_6">5000</term>
+    		<term key="MAX_TIME_OPTIMUN_6">6000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 6-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles6">-</term>
+      		<term key="TimesObstacles6">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles6">3</term>   
+      		<term key="DelayObstacles6">10</term>
+      		<term key="AllowsObstacles6">0;1;2</term>
+		<!--  LEVEL 7  -->
+		<!--  =======  -->
+    		<term key="TimeLevel7">110</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow7">1;2;3;4</term>
+			  <term key="Background7">BackgroundTardeAsset</term> 
+    		
+    	
+    		<term key="Momoko7">18;3;4,14</term>
+    		<term key="Miyako7">18;3;5,12</term>
+    		<term key="Kaoru7">18;3;7,13</term>
+    		<term key="TIME_POPUP_7">10000</term>
+    		<term key="TIME_PROCESS_7">5000</term>
+    		<term key="MAX_TIME_OPTIMUN_7">6000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 7-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles7">-</term>
+      		<term key="TimesObstacles7">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles7">4</term>   
+      		<term key="DelayObstacles7">10</term>
+      		<term key="AllowsObstacles7">0;1;2</term>
+      		
+		<!--  LEVEL 8  -->
+		<!--  =======  -->
+    		<term key="TimeLevel8">120</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow8">1;2;3;4</term>
+		    <term key="Background8">BackgroundNocheAsset</term> 
+    		
+    	
+    		<term key="Momoko8">20;3;4,14</term>
+    		<term key="Miyako8">20;3;5,12</term>
+    		<term key="Kaoru8">20;3;7,13</term>
+    		<term key="TIME_POPUP_8">10000</term>
+    		<term key="TIME_PROCESS_8">4500</term>
+    		<term key="MAX_TIME_OPTIMUN_8">6000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 8-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles8">-</term>
+      		<term key="TimesObstacles8">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles8">4</term>   
+      		<term key="DelayObstacles8">15</term>
+      		<term key="AllowsObstacles8">0;1;2</term>
+		
+	<!--  LEVEL 9  -->
+		<!--  =======  -->
+    		<term key="TimeLevel9">135</term>					<!--  EJEMPLO - Tiempo del nivel (segundos)  -->
+    		<term key="ActionsAllow9">1;2;3;4</term>
+		    <term key="Background9">BackgroundNocheAsset</term> 
+    		
+    	
+    		<term key="Momoko9">25;2.5;4,14</term>
+    		<term key="Miyako9">25;2.5;5,12</term>
+    		<term key="Kaoru9">25;2.5;7,13</term>
+    		<term key="TIME_POPUP_9">10000</term>
+    		<term key="TIME_PROCESS_9">4500</term>
+    		<term key="MAX_TIME_OPTIMUN_9">6000</term>
+    	  
+    	  <!-- OBSTACULOS nivel 9-->
+  		    <!---------  si se quiere predefinir los obstaculos--------->
+      		<term key="OrderObstacles9">-</term>
+      		<term key="TimesObstacles9">-</term>
+      		<!---------  si se quiere randomizar los obstaculos--------->
+      		<term key="NumberObstacles9">4</term>   
+      		<term key="DelayObstacles9">15</term>
+      		<term key="AllowsObstacles9">0;1;2</term>
+	
+	<!--  FLOW  -->
+	<!--  ====  -->
+	<term key="TransitionAfterPreloader">true</term>	<!--  Pasaje de preloader a main menu con transicin? ("true o "false")  -->
+	
+	<!--  HUD  -->
+	<!--  ===  -->
+	<term key="HUDNumDigitsScore">5</term>	<!--  Cant. de dgitos en el puntaje  -->
+	<term key="HUDNumDigitsTime">3</term>	<!--  Cant. de dgitos en el tiempo  -->
+		
+	<!--  LEVEL RESULT  -->
+	<!--  ===== ======  -->
+	<term key="LevelCompleteDigitsScore">5</term>
+	
+	<!--  VOLUMES  -->
+	<!--  =======  -->
+	<term key="MasterVolume">1</term>
+	<term key="VolumeMusicMainScreen">1</term>
+	<term key="VolumeMusicInGame">0.3</term>
+	<term key="VolumeMusicGameWon">1</term>
+	<term key="VolumeMusicGameLost">0.4</term>
+	
+	<term key="VolumeMusicKaoru">0.2</term>
+	<term key="VolumeMusicMiyako">0.3</term>
+	<term key="VolumeMusicMomoko">0.3</term>
+	<term key="VolumeMusicMojo">0.1</term>
+	
+	<term key="VolumeRollOver">1</term>
+	<term key="VolumeGoodOperation">1</term>
+	<term key="VolumeBadOperation">0.1</term>
+	<term key="VolumeMojoAppear">1</term>
+	<term key="VolumePedal">0.5</term>
+	<term key="VolumeButtonCookerPopUp">1</term>
+	<term key="VolumeButtonRadio">1</term>
+	<term key="VolumeButtonTV">0.5</term>
+	<term key="VolumeButtonComputer">1</term>
+	<term key="VolumeTurnOnRadio">0.3</term>
+	<term key="VolumeStars">1</term>
+	<term key="VolumeLittleBallonAppear">1</term>
+	<term key="VolumeClickButton">1</term>
+	<term key="VolumePeachBark">0.8</term>
+	<term key="VolumeMojoFlash">1</term>
+	<term key="VolumeMojoBreak">1</term>
+	<term key="VolumeWalk">1</term>
+	<term key="VolumeOpenDoor">1</term>
+	<term key="VolumeCloseDoor">1</term>
+	<term key="VolumeButtonTelephone">1</term>
+	<term key="VolumeTelephoneRing">0.4</term>
+	<term key="VolumeTurnOnTV">0.5</term>
+	<term key="VolumePopUp">0.8</term>
+	<term key="VolumeTransition">0.7</term>
+	<term key="VolumeAnnoyed">0.5</term>
+	<term key="VolumeEating">0.3</term>
+	<term key="VolumeTimeUpSound">1</term>
+	<term key="VolumeLevelIndicator">1</term>
+	<term key="VolumeShoutKaoru">1</term>
+	<term key="VolumeShoutMiyako">1</term>
+	<term key="VolumeShoutMomoko">1</term>
+	<term key="VolumeMojoLaught">0.3</term>
+	<term key="VolumeRollOver">1</term>
+	
+	<!--  GLOW  -->
+	<!--  ====  -->
+	<term key="GLOW_MOMOKO">0xE61151</term>  <!--colorada-->
+	<term key="GLOW_MIYAKO">0x215899</term>  <!--RUBIA-->
+	<term key="GLOW_KAORU">0x51A649</term>   <!--MOROCHA-->
+	<term key="GLOW_DEFAULT">0x990033</term> <!--MOROCHA-->
+	<term key="GLOW_ACTIONS">0xFFFFFF</term>
+	<term key="ALPHA">0.9</term>
+	<term key="BLUR_X">3</term>
+	<term key="BLUR_Y">3</term>
+	<term key="STRENGTH">4</term>
+	<term key="QUALITY">2</term>
+	
+	<!--  MOJO  -->
+	<!--  ====  -->	
+	<!--2: musica; 4: tv-->
+	<term key="TypesBreakActions">2;4</term>
+	<term key="MojoMusic">MojoMusic</term>
+	<term key="MojoProgram">MojoProgram</term>
+	<term key="InitPositionX">0</term>
+	<term key="InitPositionY">162</term>
+	<term key="NamesBreakActions">escuchar_musica;mirar_tv</term>
+	<term key="DestPosition">540,220;432,352</term><!-- en el mismo orden en que estan los nombres de las posibles acciones que se pueden romper -->
+
+	
+	<!--  GIRL  -->
+	<!--  ====  -->
+	<term key="LittleBallonScale">0.8</term>
+	<term key="LittleBallosnPosX">1</term>
+	<term key="LittleBallosnPosY">-90</term>
+	<term key="MIN_TO_BE_ANGRY">30</term>       <!-- Mnimo porcentage para que se ENOJE-->
+	<term key="MIN_TO_BE_IMPATIENT">40</term>   <!-- Mnimo porcentage para que sea IMPTIENTE-->
+	<term key="MIN_FOR_IDLE">55</term>          <!-- Mnimo porcentage para que este en IDLE-->
+	<term key="MIN_TO_BE_HAPPY">80</term>       <!-- Mnimo porcentage para que sea FELIZ-->
+	<term key="SPEED">150</term>                <!-- Velocidad al caminar-->
+	<term key="DOOR_POINT">10;8</term>          <!-- Ubicacin de la puerta,no modificar-->
+	
+	<term key="INIT_PERCENTAGE">60;60;60;60;60;55;55;55;50;50</term> <!-- Porcentage inicial por nivel, separado por ';' -->
+	<term key="DECREMENT_CHEERUP">0;0.004;0.004;0.007;0.009;0.009;0.010;0.015;0.020;0.020</term>  <!-- coeficiente para bajar la barra por nivel, separado por ';'. Ms grande ms baja -->
+	
+	<term key="DELAY_BETWEEN_ANIMATION">100</term>
+	<term key="ROUND_ABOUT_DELAY">30</term>
+  
+	<!--  ARTIFACTS  -->
+	<!--  ========  -->
+	<term key="ALPHA_ARTIFACT">0.3</term>
+
+	<!--  COOKER  -->
+	<!--  ======  -->
+	<term key="COOKER_POS_X">343</term>
+	<term key="COOKER_POS_Y">117</term>
+	<term key="COOKER_POPUP_POSITION">355;95</term>
+	<term key="COOKER_NUM_BUTTONS">5</term>
+	
+	<term key="COOKER_NUM_BUTTONS_SEQUECE">2;2;2;2;2;3;3;3</term>	           <!-- Numero de botones de la secuencia. Cambia x nivel separado por ';'-->
+	<term key="COOKER_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100;100</term>      <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="COOKER_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term>    <!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="COOKER_DEC_PERCENTAGE_X_BAD_ACTION">0;0;0;10;10;10;10;10;10;10</term> <!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->
+	
+	<!--  TELEPHONE  -->
+	<!--  =========  -->
+	<term key="PHONE_POS_X">254</term>
+	<term key="PHONE_POS_Y">213</term>
+	<term key="PHONE_POPUP_POSITION">265;155</term>
+	<term key="PHONE_NUM_BUTTONS">9</term>
+	
+	<term key="PHONE_NUM_BUTTONS_SEQUECE">2;2;2;2;2;3;3;3</term>	          <!-- Numero de botones de la secuencia. Cambia x nivel separado por ';'-->
+	<term key="PHONE_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100;100</term>      <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="PHONE_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term>    <!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="PHONE_DEC_PERCENTAGE_X_BAD_ACTION">0;0;10;10;10;10;10;10;10;10</term> <!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->
+	
+	
+	
+	<!--  COMPUTER  -->
+	<!--  ========  -->
+	<term key="COMPUTER_POS_X">158</term>
+	<term key="COMPUTER_POS_Y">100</term>
+	<term key="COMPUTER_POPUP_POSITION">120;95</term>
+	<term key="COMPUTER_NUM_BUTTONS">5</term>
+	
+	<term key="COMPUTER_NUM_BUTTONS_SEQUECE">2;2;2;2;2;3;3;3</term>	       <!-- Numero de botones de la secuencia. Cambia x nivel separado por ';'-->
+	<term key="COMPUTER_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100;100</term>  <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="COMPUTER_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term><!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="COMPUTER_DEC_PERCENTAGE_X_BAD_ACTION">0;0;0;10;10;10;10;10;10;10</term><!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->
+	
+	<!-- RADIO -->
+	<!-- ===== -->
+	<term key="RadioSounds">MusicMomoko;MusicKaoru;MusicMiyako;MusicMojo</term>
+	
+	<term key="RADIO_POS_X">515</term>
+	<term key="RADIO_POS_Y">154</term>
+	<term key="RADIO_POPUP_POSITION">473;85</term>
+	
+	<term key="RADIO_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100;100</term>   <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="RADIO_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term> <!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="RADIO_DEC_PERCENTAGE_X_BAD_ACTION">0;0;0;10;10;10;10;10;10;10</term> <!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->
+	<term key="TIME_TO_PLAY">10000</term>        <!-- Son milisegundos -->
+	
+	<!--  TELEVISION  -->
+	<!--  ==========  -->
+	<term key="TV_POS_X">428</term>
+	<term key="TV_POS_Y">294</term>
+	<term key="TV_POPUP_POSITION">520;290</term>
+	<term key="TVPrograms">KaoruProgram;MiyakoProgram;MomokoProgram</term>
+	
+	<term key="TV_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100;100</term>     <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="TV_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term>   <!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="TV_DEC_PERCENTAGE_X_BAD_ACTION">0;0;0;10;10;10;10;10;10;10</term><!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->	
+		
+	<!--  BIKE  -->
+	<!--  ====  -->
+	<term key="BIKE_POS_X">74</term>
+	<term key="BIKE_POS_Y">346.6</term>
+	<term key="BIKE_POPUP_POSITION">79;240</term>
+	
+	<term key="BIKE_SCORE_X_GOOD_ACTION">100;100;100;100;100;100;100</term>    <!-- Putos x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="BIKE_PERCENTAGE_X_GOOD_ACTION">100;100;100;20;20;20;18;15;15;10</term>  <!-- Porcentage x accin bien hecha. Cambia x nivel separado por ';'-->
+	<term key="BIKE_DEC_PERCENTAGE_X_BAD_ACTION">0;0;0;10;10;10;10;10;10;10</term><!-- Porcentage a bajar x accin mal hecha. Cambia x nivel separado por ';'-->	
+	<term key="BIKE_TURNS">5;5;5;5;5;5;5;5;5;5</term>     <!-- Nmero de vueltas necesarias para realizar bien la accin-->
+	
+	<!--  PEACH  -->
+	<!--  =====  -->
+	<term key="PEACH_DURING_IDLE">50000</term>         <!-- Tiempo(ms) en q se mantienen en estado IDLE-->
+	<term key="PEACH_DURING_SLEEPING">10000</term>     <!-- Tiempo(ms) en q se mantienen DURMIENDO-->
+	<term key="PEACH_INCREMENT_VOLUMEN_IN">0.2</term>  <!-- En cuanto se ira incrementando el volumen del ladrido en el transcurso tiempo-->
+	<term key="PEACH_DELAY_X_INC_VOLUMEN">4000</term>  <!-- Cada cuantos milisegundos se actualiza el volumen del ladrido -->
+	<term key="PEACH_TIME_EATING">10000</term>         <!-- cuanto tiempo se mantendra comiendo -->
+	<term key="PEACH_POS_X">266.4</term>
+	<term key="PEACH_POS_Y">88.5</term>
+	
+
+	
+	<!--  TIMERS...  -->
+	<!--  ======     -->
+	<term key="TimerScale">.5</term>
+	<term key="CookerTimerX">-20</term>
+	<term key="CookerTimerY">-40</term>
+	<term key="ComputerTimerX">17</term>
+	<term key="ComputerTimerY">-112</term>
+	<term key="BikeTimerX">-35</term>
+	<term key="BikeTimerY">-120</term>
+	<term key="TVTimerX">10</term>
+	<term key="TVTimerY">-70</term>
+	<term key="RadioTimerX">-20</term>
+	<term key="RadioTimerY">-40</term>
+	<term key="PhoneTimerX">18</term>
+	<term key="PhoneTimerY">-108</term>
+	
+	<!--  GAME MANAGER...  -->
+	<!--  ============     -->
+	<term key="FirstMinQualification">33</term>
+	<term key="SecondMinQualification">66</term>
+	<term key="ThirdMinQualification">100</term>
+	
+        <!--  TUTOR..  -->
+	<!--  =======  -->
+		<term key="TutorX">250</term>
+		<term key="TutorY">400</term>
+		<term key="ControlTimeTutor">2</term>
+</config>
